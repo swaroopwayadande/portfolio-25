@@ -7,7 +7,7 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
-    allowedHosts: ["portfolio-25-rxjn.onrender.com"],
+    allowedHosts: ["all"],
   },
   plugins: [react()],
   resolve: {
