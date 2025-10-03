@@ -1,6 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, ExternalLink } from "lucide-react";
 
+// For Next.js/public folder
+// const profileImg = "/profile.jpg"; 
+
+// For Vite/CRA and importing from assets
+// import profileImg from "@/assets/profile.jpg";
+
 const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center px-4 py-20 bg-gradient-primary">
@@ -76,12 +82,20 @@ const Hero = () => {
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-accent rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity"></div>
               <div className="relative w-80 h-80 bg-card rounded-2xl border-2 border-primary/20 overflow-hidden shadow-card flex items-center justify-center">
-                {/* Placeholder for profile image */}
-                <div className="text-center p-8">
-                  <div className="w-full h-full bg-muted/20 rounded-xl flex items-center justify-center">
-                    <p className="text-muted-foreground">Your Photo Here</p>
-                  </div>
-                </div>
+                {/* Insert your profile image here */}
+                {/* If using Next.js and public folder: */}
+                <img
+                  src="src\images\me\swar image.jpg" // update filename as needed
+                  alt="Swaroop Wayadande"
+                  className="w-full h-full object-cover rounded-xl"
+                />
+                {/* If importing, use: 
+                <img
+                  src={profileImg}
+                  alt="Swaroop Wayadande"
+                  className="w-full h-full object-cover rounded-xl"
+                />
+                */}
               </div>
             </div>
           </div>
