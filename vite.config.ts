@@ -5,9 +5,10 @@ import path from "path";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   server: {
-    host: "::",
+    // host: "::",
     port: 8080,
-    allowedHosts: ["all"],
+    allowedHosts: ["0.0.0.0"],
+    host: '0.0.0.0',
   },
   plugins: [react()],
   resolve: {
