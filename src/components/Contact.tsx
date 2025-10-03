@@ -53,13 +53,13 @@ const Contact = () => {
           </Card>
           
           <Card className="p-6 bg-card/50 backdrop-blur-sm border-primary/10 hover:border-primary/30 transition-all hover:shadow-glow group">
-            <a href="https://swaroopwayadande.netlify.app" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4">
+            <a href="https://drive.google.com/file/d/1F4gnu_W0EKAUwXsPMzn2rjUIU3obldld/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4">
               <div className="p-3 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
                 <ExternalLink className="w-6 h-6 text-primary" />
               </div>
               <div>
-                <h3 className="font-semibold mb-1">Portfolio</h3>
-                <p className="text-muted-foreground text-sm">swaroopwayadande.netlify.app</p>
+                <h3 className="font-semibold mb-1">Resume</h3>
+                <p className="text-muted-foreground text-sm">Download</p>
               </div>
             </a>
           </Card>
