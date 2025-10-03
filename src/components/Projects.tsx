@@ -2,6 +2,12 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github } from "lucide-react";
 
+// Import images explicitly so Vite processes them correctly
+import csiWebsiteImg from "@/images/projects/csi_website.png";
+import blogSiteImg from "@/images/projects/blogsite.png";
+import studyScheduleImg from "@/images/projects/studyschedulegenerator.png";
+import healthyHarvestImg from "@/images/projects/healthyharvest.jpg";
+
 const projects = [
   {
     title: "College Community Website (CSI - TKIET)",
@@ -9,7 +15,7 @@ const projects = [
     description:
       "Students can view notices, events, and team details with an admin panel for secure content management. Implemented responsive and dynamic UI features (mobile-friendly navbar, animated sections, notices/events integration with MongoDB), improving accessibility and engagement for hundreds of students.",
     tags: ["EJS", "Node.js", "Express", "MongoDB"],
-    image: "src/images/projects/csi_website.png",
+    image: csiWebsiteImg,
     github: "https://github.com/swaroopwayadande/csi_website",
     link: "https://csi-website-k140.onrender.com",
   },
@@ -19,7 +25,7 @@ const projects = [
     description:
       "Developed a full-stack posting application to gain hands-on experience with server-side rendering using EJS and backend development with Node.js and Express. Implemented CRUD operations and data management using MongoDB as the database.",
     tags: ["EJS", "Node.js", "Express", "MongoDB"],
-    image: "src/images/projects/blogsite.png",
+    image: blogSiteImg,
     github: "https://github.com/swaroopwayadande/blog-posting-app",
     link: "https://blog-posting-app-bysa.onrender.com",
   },
@@ -29,20 +35,19 @@ const projects = [
     description:
       "Developed a command-line Study Schedule Generator in C that accepts a user-specified number of subjects and 'hardness' ratings to allocate study time proportionally across topics. Integrated file I/O to export personalized schedules to a formatted text file.",
     tags: ["C Programming", "DSA", "File I/O"],
-    image: "src/images/projects/studyschedulegenerator.png",
+    image: studyScheduleImg,
     github: "https://github.com/swaroopwayadande/study-schedule-generator",
     link: "",
   },
   {
-    title: "Healthy Harvest", // your new project info
+    title: "Healthy Harvest",
     date: "2023",
     description: "An Android app developed in Java using SQLite that shows all diseases that can affect crops. This project was created as a group project.",
     tags: ["Android", "Java", "SQLite", "Group Project"],
-    image: "src/images/projects/healthyharvest.jpg", // replace with your actual image if any
-    github: "https://github.com/swaroopwayadande/healthy-harvest", // replace with your actual GitHub link
-    link: "", // if there's a live demo, add URL here
+    image: healthyHarvestImg,
+    github: "https://github.com/swaroopwayadande/healthy-harvest",
+    link: "",
   }
-
 ];
 
 const Projects = () => {

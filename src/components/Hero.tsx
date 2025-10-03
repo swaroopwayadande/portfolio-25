@@ -1,11 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, ExternalLink } from "lucide-react";
-
-// For Next.js/public folder
-// const profileImg = "/profile.jpg"; 
-
-// For Vite/CRA and importing from assets
-// import profileImg from "@/assets/profile.jpg";
+import swarImage from "@/images/me/swar image.jpg"; // import image with correct relative path
 
 const Hero = () => {
   return (
@@ -82,20 +77,11 @@ const Hero = () => {
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-accent rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity"></div>
               <div className="relative w-80 h-80 bg-card rounded-2xl border-2 border-primary/20 overflow-hidden shadow-card flex items-center justify-center">
-                {/* Insert your profile image here */}
-                {/* If using Next.js and public folder: */}
                 <img
-                  src="src\images\me\swar image.jpg" // update filename as needed
+                  src={swarImage} // use imported image here
                   alt="Swaroop Wayadande"
                   className="w-full h-full object-cover rounded-xl"
                 />
-                {/* If importing, use: 
-                <img
-                  src={profileImg}
-                  alt="Swaroop Wayadande"
-                  className="w-full h-full object-cover rounded-xl"
-                />
-                */}
               </div>
             </div>
           </div>
