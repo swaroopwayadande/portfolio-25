@@ -63,12 +63,8 @@ const Hero = () => {
                 <Mail className="w-5 h-5" />
               </a>
               <a 
-                href="https://swaroopwayadande.netlify.app" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="p-3 bg-card hover:bg-primary/10 rounded-lg border border-border transition-all hover:border-primary hover:shadow-glow"
               >
-                <ExternalLink className="w-5 h-5" />
+              
               </a>
             </div>
           </div>
